@@ -1,0 +1,54 @@
+[user]
+	name  = Sergey Chizhik
+	email = s.s.chizhik@gmail.com
+
+[core]
+	editor = vim
+
+[color]
+	diff   = true
+	grep   = true
+	status = true
+	ui     = true
+
+	[color "diff"]   # Due to https://github.com/monolithed/dotfiles/blob/master/.gitconfig
+		meta       = normal
+		frag       = magenta bold
+		old        = red bold
+		new        = green bold
+		whitespace = red reverse
+
+	[color "status"]
+		added      = green bold
+		changed    = red bold
+		untracked  = cyan bold
+
+	[color "branch"]
+		current = blue bold reverse
+		local   = white bold
+		remote  = green
+
+[credential]
+        helper = cache --timeout=7200
+
+[alias]
+	# Common
+	ci = commit
+	br = branch
+	co = checkout
+	st = status
+
+	# Stash commands
+	sa = stash apply
+	sd = stash drop
+	sl = stash list
+	sp = stash pop
+	ss = stash save
+
+	# Log. Due to http://sweetme.at/2013/09/13/git-logs-with-color/
+	h = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --graph
+	l = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+[log]
+	decorate = full
+
