@@ -11,6 +11,7 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
  - `cmatrix` — just for fun
  - `tree` — to make oxygen
  - `mc` — filemanager
+ - `xclip` — console copy/paste
 
 ### Web developing
  - `php-cli` — run cli scripts
@@ -27,7 +28,7 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
  
 ### Other tools
  - `hdparm` — want to know disk param
-
+ - `auto[make|conf]` — for some things
 ### GUI
  - `charles-proxy` — amazing web proxy for debugging
  - `conky` — makes desktop beautifuler

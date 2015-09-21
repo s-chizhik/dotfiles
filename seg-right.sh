@@ -31,6 +31,10 @@ __get_username () {
 	echo $(whoami);
 }
 
+__get_tmp () {
+	sudo du /tmp -h --summarize	# nobody cares
+}
+
 #[fg=red]#[bg=red]#[fg=black] ###S #[bg=yellow]#[fg=blue]#[bg=blue]#[fg=black] %R  %m-%d-%Y #[fg=yellow]#[bg=green]#[fg=black] ♥ #(cat /sys/class/power_supply/BAT1/capacity)% #[default]'
 #set-option -g status-left '#[
 
@@ -59,5 +63,6 @@ if [[ $BATTERY_STATUS -eq Charging ]]; then
 fi
 
 echo \
+	"#[bg=white,fg=yellow]"$SEG_L_F"#[fg=black,bg=yellow]" $(__get_tmp) \
 	"#[fg=$BAT_COLOR]"$SEG_L_F"#[bg=$BAT_COLOR,fg=black]" $BAT_ICON$BAT_STATUS $BATTERY_LEVEL% \
  	"#[fg=blue]"$SEG_L_F"#[bg=blue,fg=black]" $(__get_date) $SEG_L_L $(__get_time) \
