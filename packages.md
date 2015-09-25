@@ -3,9 +3,9 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
  - `zsh` — favorite shell
  - `git` — control version system(for this repo too)
  - `wget` — as file downloader 
- - `curl` — for networks testing
+ - `curl` — for http testing (**WARNING** Libcurl contain ssl bug. Described [here](http://stackoverflow.com/questions/20988782/curl-unknown-ssl-protocol-error-in-connection-error-in-server-but-works-on-lo))
  - `htop` — instead of `top`
- - `tmux` — terminal multiplexer(awesome powerline status bar)
+ - `tmux` — terminal multiplexer(I've made awesome powerline status bar)
  - `dnsutils` — to perform `dig` and `nslookup`
  - `whois` — cause i want to know something about host
  - `cmatrix` — just for fun
@@ -29,11 +29,13 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
 ### Other tools
  - `hdparm` — want to know disk param
  - `auto[make|conf]` — for some things
+
 ### GUI
  - `charles-proxy` — amazing web proxy for debugging
  - `conky` — makes desktop beautifuler
  - `gitk` — i found it usefull, if you want to look to git commit tree
  - `plank` — simple dock-bar
+ - `meld` — cool diff tool
 
 ### Special tools
  - `composer` — php dependency manager
@@ -42,4 +44,3 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
  - `bower` — frontend dependency manager
  - `grunt` — frontend builder
  - `phpbrew` — compiles different versions of PHP for lazy guys :)
-
