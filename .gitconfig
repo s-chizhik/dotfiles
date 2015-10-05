@@ -13,15 +13,15 @@
 
 	[color "diff"]   # Due to https://github.com/monolithed/dotfiles/blob/master/.gitconfig
 		meta       = normal
-		frag       = magenta bold
-		old        = red bold
-		new        = green bold
+		frag       = magenta
+		old        = red
+		new        = green
 		whitespace = red reverse
 
 	[color "status"]
-		added      = green bold
-		changed    = red bold
-		untracked  = cyan bold
+		added      = green
+		changed    = red
+		untracked  = cyan
 
 	[color "branch"]
 		current = blue bold reverse
@@ -33,10 +33,11 @@
 
 [alias]
 	# Common
-	ci = commit
-	br = branch
-	co = checkout
-	st = status
+	ci  = commit
+	br  = branch
+	co  = checkout
+	cob = checkout -b
+	st  = status
 
 	# Stash commands
 	sa = stash apply
@@ -47,8 +48,10 @@
 
 	# Log. Due to http://sweetme.at/2013/09/13/git-logs-with-color/
 	h = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --graph
-	l = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	l = log --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)<%an>%Creset %C(yellow)%d%Creset' --abbrev-commit --date=relative
 
 [log]
 	decorate = full
 
+[push]
+	default = simple

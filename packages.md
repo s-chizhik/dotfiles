@@ -16,7 +16,7 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
 ### Web developing
  - `php-cli` — run cli scripts
  - `php-fpm` — to use with `nginx`
- - `php-[gd|json|yaml|xml|mcrypt|pdo|mysql|sqlite|ssh2|xdebug|curl]` — additional extensions
+ - `php-[gd|json|yaml|xml|mcrypt|pdo|mysql|sqlite|ssh2|xdebug|curl|soap|runkit]` — additional extensions
  - `phpunit` — to be a good boy, and make tests
  - `nginx` — awesome web server
  - `mysql` — awesome database
@@ -44,3 +44,10 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
  - `bower` — frontend dependency manager
  - `grunt` — frontend builder
  - `phpbrew` — compiles different versions of PHP for lazy guys :)
+
+### Build Dependencies for PHP('-dev')
+ - `libxml2` — 
+ - `libbz2` — 
+ - `libmcrypt` — 
+ - `libreadline` — 
+ - `libxslt1` — 
