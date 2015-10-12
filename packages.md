@@ -6,17 +6,22 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
  - `curl` — for http testing (**WARNING** Libcurl contain ssl bug. Described [here](http://stackoverflow.com/questions/20988782/curl-unknown-ssl-protocol-error-in-connection-error-in-server-but-works-on-lo))
  - `htop` — instead of `top`
  - `tmux` — terminal multiplexer(I've made awesome powerline status bar)
- - `dnsutils` — to perform `dig` and `nslookup`
+ - `dnsutils` — to perform `dig` and `nslookup` (`bind-utils` in Fedora)
  - `whois` — cause i want to know something about host
  - `cmatrix` — just for fun
  - `tree` — to make oxygen
  - `mc` — filemanager
  - `xclip` — console copy/paste
+ - `mtr` — MyTraceRoute
+ - `vim` — or `nano`
+ - `links` — if `chrome` use too much memory
+ - `iperf` — tesing bandwidth
+ - `dnsmasq` — dns
 
 ### Web developing
  - `php-cli` — run cli scripts
  - `php-fpm` — to use with `nginx`
- - `php-[gd|json|yaml|xml|mcrypt|pdo|mysql|sqlite|ssh2|xdebug|curl|soap|runkit]` — additional extensions
+ - `php-[gd|json|yaml|xml|mcrypt|pdo|mysql|sqlite|ssh2|xdebug|curl|soap|runkit|iconv]` — additional extensions
  - `phpunit` — to be a good boy, and make tests
  - `nginx` — awesome web server
  - `mysql` — awesome database
@@ -29,6 +34,7 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
 ### Other tools
  - `hdparm` — want to know disk param
  - `auto[make|conf]` — for some things
+ - `gcc`
 
 ### GUI
  - `charles-proxy` — amazing web proxy for debugging
@@ -51,3 +57,4 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
  - `libmcrypt` — 
  - `libreadline` — 
  - `libxslt1` — 
+ - `libbison` —
