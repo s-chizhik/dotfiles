@@ -17,6 +17,7 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
  - `links` — if `chrome` use too much memory
  - `iperf` — tesing bandwidth
  - `dnsmasq` — dns
+ - `openvpn` — VPN client
 
 ### Web developing
  - `php-cli` — run cli scripts
@@ -42,6 +43,7 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
  - `gitk` — i found it usefull, if you want to look to git commit tree
  - `plank` — simple dock-bar
  - `meld` — cool diff tool
+ - `parcellite`
 
 ### Special tools
  - `composer` — php dependency manager
@@ -58,3 +60,5 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
  - `libreadline` — 
  - `libxslt1` — 
  - `libbison` —
+ - `libgd` —
+ - `libmysqld` —
