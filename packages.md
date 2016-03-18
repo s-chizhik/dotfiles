@@ -22,12 +22,16 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
 ### Web developing
  - `php-cli` — run cli scripts
  - `php-fpm` — to use with `nginx`
- - `php-[gd|json|yaml|xml|mcrypt|pdo|mysql|sqlite|ssh2|xdebug|curl|soap|runkit|iconv]` — additional extensions
+ - `php-[gd|json|yaml|xml|mcrypt|pdo|mysql|sqlite|ssh2|xdebug|curl|soap|iconv]` — additional extensions
  - `phpunit` — to be a good boy, and make tests
  - `nginx` — awesome web server
  - `mysql` — awesome database
  - `mycli` — awesome database client([it`s not joke, just try it](http://mycli.net/))
  - `npm(node)` — for a some frontend stuff
+
+#### PHP Extensions
+ - `timecop` — [PHP time machine](https://github.com/hnw/php-timecop)
+ - `runkit` — [For things, that you actually shouldn't do](https://github.com/zenovich/runkit)
 
 ### Other developing
  - `jdk-8` — it might be usefull
