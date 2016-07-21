@@ -56,6 +56,7 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
  - `bower` — frontend dependency manager
  - `grunt` — frontend builder
  - `phpbrew` — compiles different versions of PHP for lazy guys :)
+ - `jq` — lightweight and flexible command-line JSON processor (https://github.com/stedolan/jq)
 
 ### Build Dependencies for PHP('-dev')
  - `libxml2` — 
