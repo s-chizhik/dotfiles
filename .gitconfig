@@ -3,7 +3,9 @@
 	email = s.s.chizhik@gmail.com
 
 [core]
-	editor = vim
+	editor = nano
+	excludesfile = ~/.gitignore
+	autocrlf = input
 
 [color]
 	diff   = true
@@ -37,7 +39,8 @@
 	br  = branch
 	co  = checkout
 	cob = checkout -b
-	st  = status
+	# st  = status
+	st = status --short --branch
 
 	; Stash commands
 	sa = stash apply
@@ -49,8 +52,9 @@
 	; Log. Due to http://sweetme.at/2013/09/13/git-logs-with-color/
 	h = "log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --graph"
 	l = "log --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)<%an>%Creset %C(yellow)%d%Creset' --abbrev-commit --date=relative"
-	pushc = "! ref=$(git symbolic-ref HEAD 2> /dev/null); echo \"git push origin ${ref}\"; git push origin \"${ref}\";"
-
+	pushc  = "! ref=$(git symbolic-ref HEAD 2> /dev/null); echo \"git push origin ${ref}\"; git push origin \"${ref}\";"
+	pushcf = "! ref=$(git symbolic-ref HEAD 2> /dev/null); echo \"git push origin ${ref}\"; git push origin \"${ref}\" --force;"
+	gbr ="! git br --contains | sed -r 's/[ *]//g'"
 [log]
 	decorate = full
 
