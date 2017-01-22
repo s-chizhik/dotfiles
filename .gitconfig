@@ -39,8 +39,7 @@
 	br  = branch
 	co  = checkout
 	cob = checkout -b
-	# st  = status
-	st = status --short --branch
+	st  = status --short --branch
 
 	; Stash commands
 	sa = stash apply
@@ -55,6 +54,7 @@
 	pushc  = "! ref=$(git symbolic-ref HEAD 2> /dev/null); echo \"git push origin ${ref}\"; git push origin \"${ref}\";"
 	pushcf = "! ref=$(git symbolic-ref HEAD 2> /dev/null); echo \"git push origin ${ref}\"; git push origin \"${ref}\" --force;"
 	gbr ="! git br --contains | sed -r 's/[ *]//g'"
+	it = !git init && git commit -m "Initial commit." --allow-empty
 [log]
 	decorate = full
 
