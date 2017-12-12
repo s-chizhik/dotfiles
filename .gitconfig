@@ -1,11 +1,8 @@
-#[user]
-#	name  = 
-#	email = 
-
 [core]
 	editor = nano
 	excludesfile = ~/.gitignore
 	autocrlf = input
+	quotepath = off  ; thx to https://stackoverflow.com/questions/22827239/how-to-make-git-properly-display-utf-8-encoded-pathnames-in-the-console-window
 
 [color]
 	diff   = true
@@ -57,6 +54,3 @@
         it = "!git init && git commit -m \"Initial commit\" --allow-empty"
 [log]
 	decorate = full
-
-#[push]
-#	default = simple
