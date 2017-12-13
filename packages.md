@@ -10,6 +10,7 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
  - `whois` — cause i want to know something about host
  - `cmatrix` — just for fun
  - `tree` — to make oxygen
+ - `pv` — Pipe Viewer
  - `mc` — filemanager
  - `xclip` — console copy/paste
  - `mtr` — MyTraceRoute
