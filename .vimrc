@@ -1,5 +1,6 @@
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
+" curl -fLo ~/.vim/colors/darcula.vim --create-dirs https://raw.githubusercontent.com/blueshirts/darcula/master/colors/darcula.vim
+" curl -fLo ~/.vimrc https://raw.githubusercontent.com/s-chizhik/dotfiles/master/.vimrc
 
 set number     " номер строки
 set hlsearch   " подсвечивать найденные совпадения
