@@ -55,8 +55,8 @@ function install_packages() {
   echo Installing packages
   echo
 
-  sudo apt-get update
-  sudo apt-get install zsh git wget curl htop tmux whois tree pv mc vim dnsutils -y
+  apt-get update
+  apt-get install zsh git wget curl htop tmux whois tree pv mc vim dnsutils sudo -y
 
 }
 
