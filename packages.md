@@ -19,6 +19,7 @@ It's list of tools, that I find usefull. I made it for me, rather then averyone 
  - `iperf` — tesing bandwidth
  - `dnsmasq` — dns
  - `openvpn` — VPN client
+ - `net-tools`
 
 ### Web developing
  - `php-cli` — run cli scripts
