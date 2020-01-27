@@ -1,56 +1,62 @@
 [core]
-	editor = nano
-	excludesfile = ~/.gitignore
-	autocrlf = input
-	quotepath = off  ; thx to https://stackoverflow.com/questions/22827239/how-to-make-git-properly-display-utf-8-encoded-pathnames-in-the-console-window
+    editor = nano
+    excludesfile = ~/.gitignore
+    autocrlf = input
+    quotepath = off  ; thx to https://stackoverflow.com/questions/22827239/how-to-make-git-properly-display-utf-8-encoded-pathnames-in-the-console-window
 
 [color]
-	diff   = true
-	grep   = true
-	status = true
-	ui     = true
+    diff   = true
+    grep   = true
+    status = true
+    ui     = true
 
-	[color "diff"]   ; Due to https://github.com/monolithed/dotfiles/blob/master/.gitconfig
-		meta       = normal
-		frag       = magenta
-		old        = red
-		new        = green
-		whitespace = red reverse
+    ; thx https://github.com/monolithed/dotfiles/blob/master/.gitconfig
+    [color "diff"]
+        meta       = normal
+        frag       = magenta
+        old        = red
+        new        = green
+        whitespace = red reverse
 
-	[color "status"]
-		added      = green
-		changed    = red
-		untracked  = cyan
+    [color "status"]
+        added      = green
+        changed    = red
+        untracked  = cyan
 
-	[color "branch"]
-		current = blue bold reverse
-		local   = white bold
-		remote  = green
+    [color "branch"]
+        current = blue bold reverse
+        local   = white bold
+        remote  = green
 
 [credential]
-        helper = 'cache --timeout = 7200'
+    helper = 'cache --timeout = 7200'
 
 [alias]
-	; Common
-	ci  = commit
-	br  = branch
-	co  = checkout
-	cob = checkout -b
-	st  = status --short
+    ; Common
+    ci  = commit
+    br  = branch
+    co  = checkout
+    cob = checkout -b
+    st  = status --short
 
-	; Stash commands
-	sa = stash apply
-	sd = stash drop
-	sl = stash list
-	sp = stash pop
-	ss = stash save
+    ; Stash commands
+    sa = stash apply
+    sd = stash drop
+    sl = stash list
+    sp = stash pop
+    ss = stash save
 
-	; Log. Due to http://sweetme.at/2013/09/13/git-logs-with-color/
-	h = "log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --graph"
-	l = "log --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)<%an>%Creset %C(yellow)%d%Creset' --abbrev-commit --date=relative"
-	pushc  = "! ref=$(git symbolic-ref HEAD 2> /dev/null); echo \"git push origin ${ref}\"; git push origin \"${ref}\";"
-	pushcf = "! ref=$(git symbolic-ref HEAD 2> /dev/null); echo \"git push origin ${ref}\"; git push origin \"${ref}\" --force;"
-	gbr ="! git br --contains | sed -r 's/[ *]//g'"
-        it = "!git init && git add . && git commit -m \"Initial commit\" --allow-empty"
+    ; Log. Due to http://sweetme.at/2013/09/13/git-logs-with-color/
+    h =      "log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --graph"
+    l =      "log --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)<%an>%Creset %C(yellow)%d%Creset' --abbrev-commit --date=relative"
+    pushc  = "! ref=$(git symbolic-ref HEAD 2> /dev/null); echo \"git push origin ${ref}\"; git push origin \"${ref}\";"
+    pushcf = "! ref=$(git symbolic-ref HEAD 2> /dev/null); echo \"git push origin ${ref}\"; git push origin \"${ref}\" --force;"
+    gbr =    "! git br --contains | sed -e 's/[ *]//g'"
+    it =     "!git init && git add . && git commit -m \"Initial commit\" --allow-empty"
+    up =     "pull --rebase --autostash"
+
 [log]
-	decorate = full
+    decorate = full
+
+[push]
+    default = simple
