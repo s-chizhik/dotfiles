@@ -4,6 +4,10 @@
     autocrlf = input
     quotepath = off  ; thx to https://stackoverflow.com/questions/22827239/how-to-make-git-properly-display-utf-8-encoded-pathnames-in-the-console-window
 
+[merge]
+    ff = no
+    commit = no
+
 [color]
     diff   = true
     grep   = true
