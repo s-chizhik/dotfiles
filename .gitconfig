@@ -57,7 +57,7 @@
     pushcf = "! ref=$(git symbolic-ref HEAD 2> /dev/null); echo \"git push origin ${ref}\"; git push origin \"${ref}\" --force;"
     gbr =    "! git br --contains | sed -e 's/[ *]//g'"
     it =     "!git init && git add . && git commit -m \"Initial commit\" --allow-empty"
-    up =     "pull --rebase --autostash"
+    up =     "pull --rebase --autostash --recurse-submodules"
 
 [log]
     decorate = full
